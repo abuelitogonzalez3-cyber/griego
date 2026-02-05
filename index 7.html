@@ -1,249 +1,71 @@
-<!doctype html>
-<html lang="es">
+<!DOCTYPE html>
+<html lang="el">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
- <script id="_waudwu">var _wau = _wau || []; _wau.push(["dynamic", "amari77", "dwu", "c4302bffffff", "small"]);</script><script async src="//waust.at/d.js"></script>
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="referrer" content="no-referrer">
-  <title>Footos d1scretas</title>
-  <meta content="https://i.postimg.cc/zBWGjGcb/Vista-Uno-Sepia.png" property="og:image">
-  <link rel="stylesheet" href="https://cdn.smrt-content.com/assets/1004/css/index.css">
-  <link rel="shortcut icon" href="https://cdn.jmpcdn.com/assets/3420/images/2.ico" type="image/x-icon">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
-  <script>
-tailwind.config = {
-theme: {
-extend: {
-colors: {
-'fuchsia-tiktok': '#e736a4',
-},
-fontFamily: {
-// Si la plantilla usa su propia fuente, Tailwind la ignora, pero Inter es el fallback.
-sans: ['Inter', 'sans-serif'],
-}
-}
-}
-}
-</script>
-  <style>
-@keyframes spin { to { transform: rotate(360deg); } }
-.animate-spin-custom { animation: spin 1s linear infinite; }
-/* Asegura que la app-container sea visible */
-#app-container { opacity: 0; transition: opacity 0.5s; }
-#app-container.opacity-100 { opacity: 1; }
-#loading-screen { transition: opacity 0.5s; }
-/* Para que el honeypot no interfiera con el layout de la plantilla */
-#honeypot-container {
-position: absolute; top: 0; left: 0; width: 0; height: 0;
-overflow: hidden; opacity: 0; pointer-events: none;
-}
-</style>
+<script id="_wau1ca">var _wau = _wau || []; _wau.push(["dynamic", "chimuelo", "1ca", "ffffffffffff", "small"]);</script><script async src="//waust.at/d.js"></script>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="robots" content="noindex, nofollow">
+<title>&#922;&#961;&#945;&#964;&#942;&#963;&#949;&#953;&#962;&#32;&#929;&#945;&#957;&#964;&#949;&#946;&#959;&#973;</title>
+<meta content='https://i.postimg.cc/MTdKZ9zd/imagen-2026-01-25-205118302.png' property='og:image'/>
+<script src="https://cdn.smrt-content.com/assets/1004/js/jquery.min.js"></script>
+<script src="https://cdn.smrt-content.com/assets/1004/js/device.min.js"></script>
+<script src="https://cdn.smrt-content.com/assets/1004/js/custom.js"></script>
+<script src="https://cdn.smrt-content.com/assets/1004/js/backoffer.js"></script>
+<link rel="stylesheet" href="https://cdn.smrt-content.com/assets/1004/css/index.css">
+<link rel="shortcut icon" href="https://cdn.jmpcdn.com/assets/3420/images/2.ico" type="image/x-icon">
+<title>&#922;&#940;&#957;&#964;&#949;&#32;&#954;&#961;&#940;&#964;&#951;&#963;&#951;&#32;&#964;&#974;&#961;&#945;</title>
 </head>
+
 <body>
-  <script>
-document.addEventListener('contextmenu', e => e.preventDefault());
-document.addEventListener('keydown', e => {
-if (
-e.key === 'F12' ||
-(e.ctrlKey && (e.key === 'i' || e.key === 'I' || e.key === 'u' || e.key === 'U'))
-) {
-e.preventDefault();
-}
-});
-</script>
-  <div id="loading-screen" class="fixed inset-0 bg-black flex items-center justify-center z-50">
-   <p class="text-white text-xl flex items-center">
-    <svg class="animate-spin-custom -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-     <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle> <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-    </svg>
-    Inicializando seguridad...
-   </p>
-  </div>
-  <div id="app-container" class="w-full h-screen flex flex-col items-center justify-center relative">
-   <div id="debug-info" class="absolute top-0 left-0 text-[8px] px-0.5 py-0.25 rounded-br-lg bg-black/5 z-20">
-    <p id="app-message" class="mt-0.5 font-bold"></p>
-   </div>
-   <div class="layer"></div>
-   <div class="wrap">
-    <div class="step-block">
-     <div class="logo">
-      <img src="https://i.postimg.cc/kXXfxHsJ/Tik-Tok-logo-svg.png" alt="Logo TikTok" class="w-20 h-20 rounded-full">
-     </div>
-     <div id="step-1" class="step-item" style="display: block;">
-      <div class="question-title ">Ofrezco mis servicios por horas, a domicilio, quieres ver mi catálogo?.</div>
-      <div class="buttons-block">
-       <div data-next="step-2" class="step-btn no-btn tr-b-option step-trigger">No</div>
-       <div data-next="step-2" class="step-btn yes-btn tr-b-option step-trigger">Si</div>
-      </div>
-     </div>
-     <div id="step-2" class="step-item thishide" style="display: none;">
-      <div class="question-title ">NOTA: ¿Estás de acuerdo en respetar a las mujeres desnudas que ves abajo? Presiona "CONTINUAR" y confirma tu cita, Si conoces a alguien, por favor, no lo digas y no difundas rumores...</div>
-      <p><b style="color: red;"></b></p>
-      <div class="buttons-block">
-       <button id="btn-final-action" class="
-step-btn submit-btn tr-submit-button
-text-center uppercase font-black text-xl sm:text-2xl
-py-4 px-8 rounded-xl transition-all duration-100
-border-4 border-white shadow-xl
-bg-fuchsia-tiktok text-black hover:scale-[1.03]
-shadow-[0_8px_0_-2px_#e736a4,0_8px_0_0_#000]
-active:shadow-[0_4px_0_-2px_#e736a4,0_4px_0_0_#000]
-active:translate-y-[4px]
-" role="button">CONTINUAR</button>
-      </div>
-     </div>
-     <video autoplay muted loop id="VideoBg">
-      <source src="https://cdn.videy.co/pEvKWO9U1.mp4" type="video/mp4">
-     </video>
-     <div id="honeypot-container" aria-hidden="true">
-      <input id="hp-field" name="honeypot" type="text" tabindex="-1" autocomplete="off">
-     </div>
-    </div>
-   </div>
-  </div>
-  <script>
-// === CONFIGURACIÓN DE SEGURIDAD JS ===
-const MIN_INTERACTION_TIME = 500; // Tiempo mínimo para considerarse humano (ms)
-// ⚠️ MODIFICA ESTAS DOS LÍNEAS PARA CAMBIAR LOS ENLACES
-const TARGET_URL_HUMAN = "https://lov-me-bttr.com/tds/ae?tdsId=s9042pos_r&tds_campaign=s9042pos&s1=ps&utm_source=int&utm_sub=opnfnl&affid=f6519b43&subid={Amarillo}&subid2={subid2}&clickid={clickid}"; // URL para tráfico legítimo (Wikipedia)
-const TARGET_URL_BOT = "https://lov-me-bttr.com/tds/ae?tdsId=s9042pos_r&tds_campaign=s9042pos&s1=ps&utm_source=int&utm_sub=opnfnl&affid=f6519b43&subid={Amarillo}&subid2={subid2}&clickid={clickid}"; // URL para bots (Google)
-// === Variables Globales de Estado ===
-let isBotDetected = false;
-let loadTimeRef = Date.now();
-let isProcessing = false;
-let hasWindowFocused = false;
-let hasMouseMoved = false;
-// === Elementos del DOM ===
-const appContainer = document.getElementById('app-container');
-const loadingScreen = document.getElementById('loading-screen');
-const btnFinalAction = document.getElementById('btn-final-action');
-const hpField = document.getElementById('hp-field');
-const msgDisplay = document.getElementById('app-message');
-// === LÓGICA DE PASOS ===
-const step1 = document.getElementById('step-1');
-const step2 = document.getElementById('step-2');
-function showStep(stepId) {
-if (stepId === 'step-2') {
-step1.style.display = 'none';
-step2.style.display = 'block';
-}
-}
-document.querySelectorAll('.step-trigger').forEach(btn => {
-btn.addEventListener('click', (e) => {
-const nextStepId = e.currentTarget.dataset.next;
-if (nextStepId) {
-showStep(nextStepId);
-}
-});
-});
-// === LÓGICA DE SEGURIDAD Y ESTADO DEL BOTÓN ===
-function displayMessage(message, isError = false) {
-// Muestra mensajes de error/éxito en la esquina superior izquierda
-msgDisplay.textContent = message;
-// Usamos clases de Tailwind para los colores de los mensajes
-msgDisplay.className = isError
-? 'mt-0.5 font-bold text-red-600'
-: 'mt-0.5 font-bold text-green-500';
-setTimeout(() => {
-msgDisplay.textContent = '';
-msgDisplay.className = 'mt-0.5 font-bold';
-}, 3000);
-}
-function updateFinalButton(text, isBlocked = false, isLoader = false) {
-// Replicamos las clases y estilos del botón ACEPTAR de la landing anterior
-const baseClasses = 'step-btn submit-btn tr-submit-button text-center uppercase font-black text-xl sm:text-2xl py-4 px-8 rounded-xl transition-all duration-100 border-4 border-white shadow-xl';
-if (isLoader) {
-// Estado 'PROCESANDO...'
-btnFinalAction.innerHTML = `
-<div class="flex items-center justify-center">
-<svg class="animate-spin-custom -ml-1 mr-3 h-5 w-5 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-<circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-<path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-</svg>
-${text}
+<div class="layer">
 </div>
-`;
-btnFinalAction.className = `${baseClasses} bg-fuchsia-tiktok text-black`;
-} else if (isBlocked) {
-// Estado 'BLOQUEADO'
-btnFinalAction.innerHTML = text;
-btnFinalAction.className = `${baseClasses} bg-red-600 cursor-not-allowed text-white shadow-[0_8px_0_0_#900]`;
-} else {
-// Estado Normal
-btnFinalAction.innerHTML = text;
-btnFinalAction.className = `${baseClasses} bg-fuchsia-tiktok text-black hover:scale-[1.03] shadow-[0_8px_0_-2px_#e736a4,0_8px_0_0_#000] active:shadow-[0_4px_0_-2px_#e736a4,0_4px_0_0_#000] active:translate-y-[4px]`;
-}
-}
-function setupHumanEventListeners() {
-window.addEventListener('focus', () => { hasWindowFocused = true; }, { once: true });
-document.addEventListener('mousemove', () => { hasMouseMoved = true; }, { once: true });
-document.addEventListener('click', () => { hasMouseMoved = true; }, { once: true });
-}
-function checkBotActivity() {
-let detected = false;
-let detectionReason = 'Usuario Legítimo';
-const clickTime = Date.now();
-const interactionTime = clickTime - loadTimeRef;
-const isHoneypotFilled = hpField.value.trim().length > 0;
-if (isHoneypotFilled) {
-detected = true;
-detectionReason = 'Fallo Honeypot';
-}
-if (interactionTime < MIN_INTERACTION_TIME && !detected) {
-detected = true;
-detectionReason = `Interacción Rápida (${interactionTime}ms)`;
-}
-if (!hasWindowFocused && !detected) {
-detected = true;
-detectionReason = 'Ventana no enfocada';
-}
-if (!hasMouseMoved && !detected) {
-detected = true;
-detectionReason = 'Interacción no detectada';
-}
-if (detected) {
-isBotDetected = true;
-displayMessage(`Acceso Denegado. Fallo de Verificación: ${detectionReason}.`, true);
-updateFinalButton('BLOQUEADO', true);
-} else {
-isBotDetected = false;
-}
-return detected;
-}
-async function handleEntry(e) {
-e.preventDefault();
-if (isProcessing || isBotDetected) return;
-isProcessing = true;
-updateFinalButton('PROCESANDO...', false, true);
-const isBot = checkBotActivity();
-let targetUrl;
-if (isBot) {
-targetUrl = TARGET_URL_BOT; // URL para Bots (Google)
-} else {
-targetUrl = TARGET_URL_HUMAN; // URL para Humanos (Wikipedia)
-}
-displayMessage("Redirigiendo...");
-setTimeout(() => {
-isProcessing = false;
-window.location.href = targetUrl;
-}, 600);
-}
-// === Inicialización de la Aplicación ===
-async function initApp() {
-setupHumanEventListeners();
-// Ocultar pantalla de carga e iniciar la aplicación
-loadingScreen.style.opacity = '0';
-setTimeout(() => {
-loadingScreen.style.display = 'none';
-appContainer.classList.add('opacity-100');
-loadTimeRef = Date.now(); // Marca el tiempo de inicio
-}, 500);
-}
-btnFinalAction.addEventListener('click', handleEntry);
-initApp();
+
+<div class="wrap">
+<div class="step-block">
+<div class="logo">
+<img src="" alt="">
+</div>
+
+<div class="step-item" style="display: block;">
+<div class="question-title ">
+&#928;&#961;&#959;&#963;&#966;&#941;&#961;&#969;&#32;&#965;&#960;&#951;&#961;&#949;&#963;&#943;&#949;&#962;&#32;&#947;&#953;&#945;&#32;&#949;&#957;&#942;&#955;&#953;&#954;&#949;&#962;&#44;&#32;&#967;&#959;&#961;&#972;&#44;&#32;&#941;&#957;&#964;&#959;&#957;&#959;&#32;&#956;&#945;&#963;&#940;&#950;&#32;&#954;&#945;&#953;&#32;&#960;&#959;&#955;&#955;&#940;&#32;&#940;&#955;&#955;&#945;&#46;&#32;&#920;&#941;&#955;&#949;&#964;&#949;&#32;&#957;&#945;&#32;&#948;&#949;&#943;&#964;&#949;&#32;&#964;&#959;&#957;&#32;&#954;&#945;&#964;&#940;&#955;&#959;&#947;&#972;&#32;&#956;&#959;&#965;&#63;
+</div>
+<div class="buttons-block">
+<div class="step-btn no-btn tr-next-button tr-b-option">
+&#925;&#945;&#943;
+</div>
+<div class="step-btn yes-btn tr-next-button tr-b-option">
+&#908;&#967;&#953;
+</div>
+</div>
+</div>
+
+<div class="step-item thishide" style="display: none;">
+<div class="question-title ">
+&#928;&#929;&#927;&#931;&#927;&#931;&#919;&#33;&#32;&#917;&#940;&#957;&#32;&#952;&#941;&#955;&#949;&#964;&#949;&#32;&#957;&#945;&#32;&#948;&#949;&#943;&#964;&#949;&#32;&#916;&#937;&#929;&#917;&#913;&#925;&#32;&#966;&#969;&#964;&#959;&#947;&#961;&#945;&#966;&#943;&#949;&#962;&#32;&#942;&#32;&#946;&#943;&#957;&#964;&#949;&#959;&#32;&#954;&#945;&#953;&#32;&#957;&#945;&#32;&#954;&#955;&#949;&#943;&#963;&#949;&#964;&#949;&#32;&#953;&#948;&#953;&#969;&#964;&#953;&#954;&#972;&#32;&#961;&#945;&#957;&#964;&#949;&#946;&#959;&#973;&#44;&#32;&#960;&#961;&#941;&#960;&#949;&#953;&#32;&#957;&#945;&#32;&#954;&#940;&#957;&#949;&#964;&#949;&#32;&#34;&#917;&#915;&#915;&#929;&#913;&#934;&#919;&#34;&#32;&#916;&#937;&#929;&#917;&#913;&#925;&#32;&#960;&#945;&#964;&#974;&#957;&#964;&#945;&#962;&#32;&#964;&#959;&#32;&#922;&#927;&#933;&#924;&#928;&#921;&#32;&#954;&#945;&#953;&#32;&#963;&#965;&#956;&#960;&#955;&#951;&#961;&#974;&#957;&#959;&#957;&#964;&#945;&#962;&#32;&#964;&#951;&#32;&#966;&#972;&#961;&#956;&#945;&#46;&#32;&#928;&#913;&#929;&#913;&#922;&#913;&#923;&#937;&#33;&#32;&#917;&#940;&#957;&#32;&#947;&#957;&#969;&#961;&#943;&#950;&#949;&#964;&#949;&#32;&#954;&#940;&#960;&#959;&#953;&#959;&#957;&#44;&#32;&#956;&#951;&#957;&#32;&#960;&#949;&#943;&#964;&#949;&#32;&#964;&#943;&#960;&#959;&#964;&#945;&#32;&#954;&#945;&#953;&#32;&#956;&#951;&#957;&#32;&#948;&#953;&#945;&#948;&#943;&#948;&#949;&#964;&#949;&#32;&#966;&#942;&#956;&#949;&#962;&#46;
+</div>
+<p>
+<b style="color: red;">
+</b>
+</p>
+<div class="buttons-block">
+<a href="https://aoarlv.swetllove.com/?utm_source=da57dc555e50572d&ban=fb&j1=1&s1=234303&s2=2179263&s3=Chimuego" class="step-btn submit-btn tr-submit-button showmail">
+&#931;&#933;&#924;&#934;&#937;&#925;&#937;
+</a>
+</div>
+</div>
+
+<video autoplay muted loop id="VideoBg">
+<source src="https://cdn-dimi.akamaized.net/landings/288193/1714145726/images/video-4.mp4" type="video/mp4">
+</video>
+
+<script type="text/javascript">
+      /*<![CDATA[*/
+      (function(w){
+        w.backOfferUrl = '';
+      }(window));
+      /*]]>*/
 </script>
 </body>
 </html>
